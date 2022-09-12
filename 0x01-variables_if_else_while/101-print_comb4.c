@@ -1,34 +1,41 @@
 #include <stdio.h>
+
 /**
-* main - program that prints all possible different combinations of 3 digits.
-* Return: 0
-*/
+ *  * main - Entry point
+ *   *
+ *    * Return: Always 0 (Success)
+ *     */
 int main(void)
 {
-int c = 0;
-int f_d;
-int m_d;
-int l_d;
+		int d = 48, a = 48, i = 48;
 
-while (c <= 999)
-{
-f_d = (c / 100 + '0');
-m_d = (c / 10 % 10 + '0');
-l_d = (c % 10 + '0');
+			while (d < 58)
+					{
+								a = 48;
+										while (a < 58)
+													{
+																	i = 48;
+																				while (i < 58)
 
-if ((f_d < m_d) && (m_d < l_d))
 {
-putchar(f_d);
-putchar(m_d);
-putchar(l_d);
+					if (d != a && a != i && d != i && d < a && a < i)
+										{
+																putchar(d);
+																					putchar(a);
+																										putchar(i);
+																															if (!(d == 55 && a == 56 && i == 57))
+																																					{
+																																												putchar(',');
+																																																		putchar(' ');
+																																																							}
+																																			}
+									i++;
+a++;
+		}
+		d++;
+			}
+	putchar('\n');
 
-if (c != 789)
-{
-putchar(',');
-putchar(' ');
-}
-}
-c++;
-}
-putchar('\n');
-return (0);
+		return (0);
+		}
+
