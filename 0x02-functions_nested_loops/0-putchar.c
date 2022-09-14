@@ -1,17 +1,20 @@
-#include "main.h"
+include "main.h"
+
 /**
-* main - Print the word "_putchar"
-*
-* Return: Always 0
+*main - prints putchar
+*Return: always 0
 */
 int main(void)
 {
-int i;
-char p[] = "_putchar";
-for (i = 0; i < 8; i++)
-{
-_putchar(p[i]);
-}
-_putchar('\n');
+_putchar("_");
+_putchar("p");
+_putchar("u");
+_putchar("t");
+_putchar("c");
+_putchar("h");
+_putchar("a");
+_putchar("r");
+_putchar("\n");
+
 return (0);
-} 
+}
