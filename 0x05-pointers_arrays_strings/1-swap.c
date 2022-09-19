@@ -6,7 +6,7 @@
 * @a: pointer argument 1
 * @b: pointer argument 2
 */
-void swap_int(int *a, int *b) 
+void swap_int(int *a, int *)
 {
 	int con = *a;
 
