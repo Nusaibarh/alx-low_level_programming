@@ -1,12 +1,20 @@
-#include 'main.h'
+#include <stdio.h>
+
+void reset_to_98(int *);
 
 /**
-*reset_to_98 - resets the value of given integer to 98
-*@n: parameter
-*Return : nothing
-*/
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
+ */
 
-void reset_to_98(int *n)
+int main(void)
 {
-	*n = 98;
-} 
+	int n;
+
+	n = 402;
+	printf("%d\n", n);
+	reset_to_98(&n);
+	printf("%d\n", n);
+	return (0);
+}     	
