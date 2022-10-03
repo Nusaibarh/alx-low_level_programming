@@ -7,6 +7,7 @@
  * @argv: argument vector
  * Return: int
  */
+int main(int argc, char *argv[])
 {
 	int i;
 
